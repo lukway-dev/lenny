@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenny</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-container">
+    <div class="container">
+      <header class="header">
+        <h1 class="header_title" id="title"> Survey Title </h1>
+        <p class="header_text" id="description"> Personal Info </p>
+      </header>
+
+      <form class="form" id="survey-form">
+        <label class="label" for="name" id="name-label"> Name </label>
+        <input class="input-text" id="name" type="text" name="name" placeholder="Enter your name" required> </input><br>
+
+        <label class="label" for="email" id="email-label"> Email </label>
+        <input class="input-text" id="email" type="email" name="email" placeholder="Enter your Email" required> </input><br>
+
+        <label class="label" for="number" id="number-label"> Age </label>
+        <input class="input-text" id="number" type="number" min="1" max="100" name="number" placeholder="Enter your age (optional)"> </input>
+
+        <label class="label" for="dropdown" id="options"> Select an option: </label>
+        <select class="input-text" id="dropdown">
+          <option disabled selected value>Select current role</option>
+          <option value="option1"> Option 1 </option>
+          <option value="option2"> Option 2 </option>
+          <option value="option3"> Option 3 </option>
+        </select>
+
+        <label class="label" for="variant" id="variant"> Would you recommend freeCodeCamp to a friend? </label>
+
+        <div class="checkbox-container">
+          <input id="variant" type="radio" name="variant_color" value="red">
+          <label class="label" for="variant"> Red </label>
+        </div>
+
+        <div class="checkbox-container">
+          <input id="variant" type="radio" name="variant_color" value="blue">
+          <label class="label" id="variant"> Blue </label>
+        </div>
+
+        <div class="checkbox-container">
+          <input id="variant" type="radio" name="variant_color" value="green">
+          <label class="label" id="variant"> Green </label>
+        </div>
+
+        <div class="checkbox-container checkbox-last">
+          <input id="variant" type="radio" name="variant_color" value="yellow">
+          <label class="label" id="variant"> Yellow </label>
+        </div>
+
+        <label class="label" for="checkbox">Select one or multiple chechboxes:</label>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label class="label" for="vehicle1"> I have a bike</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label class="label" for="vehicle2"> I have a car</label>
+        </div>
+        <div class="checkbox-container  checkbox-last">
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label class="label" for="vehicle3"> I have a boat</label>
+        </div>
+
+        <label class="label" for="comment">Add a commentary below: </label>
+          <textarea class="input-text" id="comment" name="comment" rows="6" cols="50"></textarea>
+        <br>
+
+        <input class="button" id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
